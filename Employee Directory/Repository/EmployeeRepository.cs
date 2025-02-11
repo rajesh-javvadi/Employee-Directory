@@ -49,6 +49,49 @@ namespace Employee_Directory.Repository
             }
         }
 
+        public async Task UpdateEmployee(Employee employee)
+        {
+            try
+            {
+                string sp = Constants.StoredProcedures.UpdateEmployee;
+                using var connection = GetSqlConnection();
+                Department department = await _departmentServices.GetDepartment(employee.department);
+                Office office = await _officeServices.GetOffice(employee.office);
+                var count =
+                    await connection.ExecuteAsync(sp, new
+                    {
+                        Id = employee.Id,
+                        firstName = employee.firstName,
+                        lastName = employee.lastName,
+                        email = employee.email,
+                        phoneNumber = employee.phoneNumber,
+                        office = office.Id,
+                        department = department.Id,
+                        skypeId = employee.skypeId,
+                        preferredName = employee.preferredName,
+                        jobTitle = employee.jobTitle,
+
+                    }, commandType: System.Data.CommandType.StoredProcedure);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+
+        public async Task DeleteEmployee(string id)
+        {
+           try
+           {
+                using var connection = GetSqlConnection();
+                var count = await connection.ExecuteAsync(Constants.Query.DeleteEmployee, new { id = id });
+           }
+           catch(Exception e)
+           {
+                Console.WriteLine(e.Message);
+           }
+        }
+
         public async Task<List<Employee>> GetAllEmployees()
         {
            try

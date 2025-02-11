@@ -21,5 +21,15 @@ namespace Employee_Directory.Services
         {
             return await _repository.GetAllEmployees();
         }
+
+        public async Task UpdateEmployee(Employee employee)
+        {
+            await _repository.UpdateEmployee(employee);
+        }
+
+        public async Task DeleteEmployee(string id)
+        {
+            await _repository.DeleteEmployee(id);
+        }
     }
 }

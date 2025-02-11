@@ -1,7 +1,19 @@
 using Employee_Directory.Repository;
 using Employee_Directory.Services;
 
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("CorsPolicy",
+        builder =>
+        {
+            builder.AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader();
+        });
+});
 
 
 
@@ -18,10 +30,13 @@ builder.Services.AddScoped<DepartmentServices>();
 
 var app = builder.Build();
 
+app.UseCors("CorsPolicy");
+
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
 }
+
 
 app.UseHttpsRedirection();
 
