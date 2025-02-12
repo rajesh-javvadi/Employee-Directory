@@ -23,5 +23,16 @@ namespace Employee_Directory.Controllers
         {
             return await _services.GetDepartment(name);
         }
+
+        [HttpGet("get-departments")]
+        public async Task<ActionResult<List<SectionAndCount>>> GetDepartmentandCount()
+        {
+            var departments = await _services.GetDepartmentsandCount();
+            if(departments is null)
+            {
+                return BadRequest();
+            }
+            return Ok(departments);
+        }
     }
 }

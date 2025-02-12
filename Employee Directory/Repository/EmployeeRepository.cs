@@ -19,7 +19,7 @@ namespace Employee_Directory.Repository
         }
 
 
-        public async Task AddEmployee(Employee employee)
+        public async Task<bool> AddEmployee(Employee employee)
         {
             try
             {
@@ -42,14 +42,16 @@ namespace Employee_Directory.Repository
                         jobTitle = employee.jobTitle,
 
                     }, commandType: System.Data.CommandType.StoredProcedure);
+                return true;
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
+                return false;
             }
         }
 
-        public async Task UpdateEmployee(Employee employee)
+        public async Task<bool> UpdateEmployee(Employee employee)
         {
             try
             {
@@ -72,23 +74,27 @@ namespace Employee_Directory.Repository
                         jobTitle = employee.jobTitle,
 
                     }, commandType: System.Data.CommandType.StoredProcedure);
+                return true;
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
+                return false;
             }
         }
 
-        public async Task DeleteEmployee(string id)
+        public async Task<bool> DeleteEmployee(string id)
         {
            try
            {
                 using var connection = GetSqlConnection();
                 var count = await connection.ExecuteAsync(Constants.Query.DeleteEmployee, new { id = id });
+                return true;
            }
            catch(Exception e)
            {
                 Console.WriteLine(e.Message);
+                return false;
            }
         }
 
@@ -114,6 +120,19 @@ namespace Employee_Directory.Repository
                 new SqlConnection(_configuration.GetConnectionString(Constants.ConnectionStrings.ConnectionString));
         }
 
-
+        internal async Task<List<SectionAndCount>> GetJobTitlesCount()
+        {
+            try
+            {
+                using var connection = GetSqlConnection();
+                var jobTitlesCount = await connection.QueryAsync<SectionAndCount>(Constants.Query.GetJobTitleandCount);
+                return jobTitlesCount.ToList();
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return null;
+            }
+        }
     }
 }

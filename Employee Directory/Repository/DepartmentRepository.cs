@@ -36,5 +36,19 @@ namespace Employee_Directory.Repository
             return null;
         }
 
+        internal async Task<List<SectionAndCount>> GetDepartmentandCount()
+        {
+            try
+            {
+                using var connection = GetSqlConnection();
+                var departmentsCount = await connection.QueryAsync<SectionAndCount>(Constants.Query.GetDepartmentsandCount);
+                return departmentsCount.ToList();
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return null;
+            }
+        }
     }
 }

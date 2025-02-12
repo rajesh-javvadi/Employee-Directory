@@ -22,7 +22,22 @@ namespace Employee_Directory.Controllers
         public async Task<ActionResult<Office>> Get(string name)
         {
            var office = await OfficeServices.GetOffice(name);
-            return Ok(office);
+           if(office != null)
+           {
+                return Ok(office);
+           }
+            return BadRequest();
+
+        }
+        [HttpGet("get-offices")]
+        public async Task<ActionResult<List<SectionAndCount>>> GetOfficesCount()
+        {
+           var offices =  await OfficeServices.GetOfficesAndCount();
+            if(offices is null)
+            {
+                return BadRequest();
+            }
+            return Ok(offices);
         }
     }
 }

@@ -15,5 +15,10 @@ namespace Employee_Directory.Services
         {
             return await _repository.GetDepartment(departmentName);
         }
+
+        public async Task<List<SectionAndCount>> GetDepartmentsandCount()
+        {
+            return await _repository.GetDepartmentandCount();
+        }
     }
 }

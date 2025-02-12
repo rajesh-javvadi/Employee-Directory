@@ -12,9 +12,9 @@ namespace Employee_Directory.Services
             _repository = repository;
         }
 
-        public async Task AddEmployee(Employee employee)
+        public async Task<bool> AddEmployee(Employee employee)
         {
-            await _repository.AddEmployee(employee);
+            return await _repository.AddEmployee(employee);
         }
 
         public async Task<List<Employee>> GetAllEmployees()
@@ -22,14 +22,19 @@ namespace Employee_Directory.Services
             return await _repository.GetAllEmployees();
         }
 
-        public async Task UpdateEmployee(Employee employee)
+        public async Task<bool> UpdateEmployee(Employee employee)
         {
-            await _repository.UpdateEmployee(employee);
+            return await _repository.UpdateEmployee(employee);
         }
 
-        public async Task DeleteEmployee(string id)
+        public async Task<bool> DeleteEmployee(string id)
         {
-            await _repository.DeleteEmployee(id);
+           return await _repository.DeleteEmployee(id);
+        }
+
+        internal async Task<List<SectionAndCount>> GetJobTitlesCount()
+        {
+            return await _repository.GetJobTitlesCount();
         }
     }
 }

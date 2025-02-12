@@ -31,6 +31,21 @@ namespace Employee_Directory.Repository
             return null;
         }
 
+        public async Task<List<SectionAndCount>> GetOfficesAndCount()
+        {
+            try
+            {
+                using var connection = GetSqlConnection();
+                var offices = await connection.QueryAsync<SectionAndCount>(Constants.Query.GetOfficesandCount);
+                return offices.ToList();
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return null;
+            }
+        }
+
         private SqlConnection GetSqlConnection()
         {
             return

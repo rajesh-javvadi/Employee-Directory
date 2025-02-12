@@ -16,5 +16,10 @@ namespace Employee_Directory.Services
         {
             return await _officeRepository.GetOffice(officeName);
         }
+
+        public async Task<List<SectionAndCount>> GetOfficesAndCount()
+        {
+            return await _officeRepository.GetOfficesAndCount();
+        }
     }
 }

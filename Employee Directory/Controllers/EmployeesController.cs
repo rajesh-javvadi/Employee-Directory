@@ -19,27 +19,55 @@ namespace Employee_Directory.Controllers
         [HttpPost("employee")]
         public async Task<ActionResult> AddEmployee(Employee employee)
         {
-            await _employeeServices.AddEmployee(employee);
-            return Ok();
+            bool status = await _employeeServices.AddEmployee(employee);
+            if(status)
+            {
+                return Created(); 
+            }
+            return BadRequest();
+            
         }
 
         [HttpGet()]
-        public async Task<List<Employee>> GetAll()
+        public async Task<ActionResult<List<Employee>>> GetAll()
         {
-            return await _employeeServices.GetAllEmployees();
+            var employees =  await _employeeServices.GetAllEmployees();
+            if(employees is not null)
+            {
+                return Ok(employees);
+            }
+            return BadRequest();
         }
         [HttpPut("employee")]
         public async Task<ActionResult> UpdateEmployee(Employee employee)
         {
-            await _employeeServices.UpdateEmployee(employee); 
-            return Ok();
+            bool status =  await _employeeServices.UpdateEmployee(employee); 
+            if(status)
+            {
+                return NoContent();
+            }
+            return BadRequest();
         }
 
         [HttpDelete("employee/{id}")]
         public async Task<ActionResult> DeleteEmployee(string id)
         {
-            await _employeeServices.DeleteEmployee(id);
-            return Ok();
+            bool status =  await _employeeServices.DeleteEmployee(id);
+            if(status)
+            {
+                return NoContent();
+            }
+            return BadRequest();
+        }
+        [HttpGet("jobTitles-count")]
+        public async Task<ActionResult<List<SectionAndCount>>> GetJobTitlesCount()
+        {
+            List<SectionAndCount> jobTitleCount = await _employeeServices.GetJobTitlesCount();
+            if(jobTitleCount is null)
+            {
+                return BadRequest();
+            }
+            return Ok(jobTitleCount);
         }
     }
 }
