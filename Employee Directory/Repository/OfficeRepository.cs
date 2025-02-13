@@ -18,7 +18,7 @@ namespace Employee_Directory.Repository
         {
             try
             {
-                using var connection = GetSqlConnection();
+                using SqlConnection connection = GetSqlConnection();
                 var office = 
                     await connection.QuerySingleAsync<Office>(Constants.Query.GetOfficeId, new {office = officeName});
                 return office;
@@ -26,23 +26,25 @@ namespace Employee_Directory.Repository
             }
             catch(Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                throw;
             }
-            return null;
         }
 
         public async Task<List<SectionAndCount>> GetOfficesAndCount()
         {
             try
             {
-                using var connection = GetSqlConnection();
+                using SqlConnection connection = GetSqlConnection();
                 var offices = await connection.QueryAsync<SectionAndCount>(Constants.Query.GetOfficesandCount);
                 return offices.ToList();
             }
-            catch(Exception ex)
+            catch(ArgumentException)
             {
-                Console.WriteLine(ex.Message);
-                return null;
+                throw new Exception(Constants.Errors.UnableToConnectToDB);
+            }
+            catch(Exception)
+            {
+                throw new Exception(Constants.Errors.UnableToFetchOffices);
             }
         }
 

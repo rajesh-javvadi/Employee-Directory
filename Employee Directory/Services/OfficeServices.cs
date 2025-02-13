@@ -14,12 +14,27 @@ namespace Employee_Directory.Services
 
         public async Task<Office> GetOffice(string officeName)
         {
-            return await _officeRepository.GetOffice(officeName);
+            try
+            {
+                return await _officeRepository.GetOffice(officeName);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         public async Task<List<SectionAndCount>> GetOfficesAndCount()
         {
-            return await _officeRepository.GetOfficesAndCount();
+            try
+            {
+                List<SectionAndCount> officeCount = await _officeRepository.GetOfficesAndCount();
+                return officeCount;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
     }
 }

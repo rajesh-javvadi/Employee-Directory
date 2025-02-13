@@ -12,29 +12,68 @@ namespace Employee_Directory.Services
             _repository = repository;
         }
 
-        public async Task<bool> AddEmployee(Employee employee)
+        public async Task AddEmployee(Employee employee)
         {
-            return await _repository.AddEmployee(employee);
+            try
+            {
+                await _repository.AddEmployee(employee);
+
+            }
+            catch
+            {
+                throw;
+            }
         }
 
         public async Task<List<Employee>> GetAllEmployees()
         {
-            return await _repository.GetAllEmployees();
+           try
+            {
+                List<Employee> employees = await _repository.GetAllEmployees();
+                return employees;
+            }
+            catch
+            {
+                throw;
+            }
         }
 
-        public async Task<bool> UpdateEmployee(Employee employee)
+        public async Task UpdateEmployee(Employee employee)
         {
-            return await _repository.UpdateEmployee(employee);
+            try
+            {
+                await _repository.UpdateEmployee(employee);
+            }
+            catch
+            {
+                throw;
+            }
+            
         }
 
-        public async Task<bool> DeleteEmployee(string id)
+        public async Task DeleteEmployee(string id)
         {
-           return await _repository.DeleteEmployee(id);
+            try
+            {
+                await _repository.DeleteEmployee(id);
+            }
+            catch
+            {
+                throw;
+            }
         }
 
         internal async Task<List<SectionAndCount>> GetJobTitlesCount()
         {
-            return await _repository.GetJobTitlesCount();
+            try
+            {
+                List<SectionAndCount> jobTitleCount = await _repository.GetJobTitlesCount();
+                return jobTitleCount;
+            }
+            catch
+            {
+                throw;
+            }
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using Employee_Directory.Models;
+﻿using Employee_Directory.Concerns;
+using Employee_Directory.Models;
 using Employee_Directory.Repository;
 
 namespace Employee_Directory.Services
@@ -13,12 +14,29 @@ namespace Employee_Directory.Services
 
         public async Task<Department> GetDepartment(string departmentName)
         {
-            return await _repository.GetDepartment(departmentName);
+            try
+            {
+                Department department = await _repository.GetDepartment(departmentName);
+                return department;
+            }
+            catch(Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+            
         }
 
         public async Task<List<SectionAndCount>> GetDepartmentsandCount()
         {
-            return await _repository.GetDepartmentandCount();
+            try
+            {
+                List<SectionAndCount> departmentAndCount = await _repository.GetDepartmentandCount();
+                return departmentAndCount;
+            }
+            catch(Exception e)
+            {
+                throw new Exception(e.Message);
+            }
         }
     }
 }

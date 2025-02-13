@@ -19,12 +19,12 @@ namespace Employee_Directory.Repository
         }
 
 
-        public async Task<bool> AddEmployee(Employee employee)
+        public async Task AddEmployee(Employee employee)
         {
             try
             {
                 string sp = Constants.StoredProcedures.InsertIntoEmployees;
-                using var connection = GetSqlConnection();
+                using SqlConnection connection = GetSqlConnection();
                 Department department = await _departmentServices.GetDepartment(employee.department);
                 Office office = await _officeServices.GetOffice(employee.office);
                 var count =
@@ -42,21 +42,23 @@ namespace Employee_Directory.Repository
                         jobTitle = employee.jobTitle,
 
                     }, commandType: System.Data.CommandType.StoredProcedure);
-                return true;
+            }
+            catch(ArgumentException)
+            {
+                throw new Exception(Constants.Errors.UnableToConnectToDB);
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
-                return false;
+                throw new Exception(Constants.Errors.EmployeeAddingFailure);
             }
         }
 
-        public async Task<bool> UpdateEmployee(Employee employee)
+        public async Task UpdateEmployee(Employee employee)
         {
             try
             {
                 string sp = Constants.StoredProcedures.UpdateEmployee;
-                using var connection = GetSqlConnection();
+                using SqlConnection connection = GetSqlConnection();
                 Department department = await _departmentServices.GetDepartment(employee.department);
                 Office office = await _officeServices.GetOffice(employee.office);
                 var count =
@@ -74,27 +76,31 @@ namespace Employee_Directory.Repository
                         jobTitle = employee.jobTitle,
 
                     }, commandType: System.Data.CommandType.StoredProcedure);
-                return true;
             }
-            catch (Exception ex)
+            catch (ArgumentException)
             {
-                Console.WriteLine(ex.Message);
-                return false;
+                throw new Exception(Constants.Errors.EmployeeUpdateFailure);
+            }
+            catch
+            {
+                throw;
             }
         }
 
-        public async Task<bool> DeleteEmployee(string id)
+        public async Task DeleteEmployee(string id)
         {
            try
            {
-                using var connection = GetSqlConnection();
-                var count = await connection.ExecuteAsync(Constants.Query.DeleteEmployee, new { id = id });
-                return true;
+                using SqlConnection connection = GetSqlConnection();
+                int count = await connection.ExecuteAsync(Constants.Query.DeleteEmployee, new { id = id });
            }
-           catch(Exception e)
+            catch(ArgumentException)
+            {
+                throw new Exception(Constants.Errors.EmployeeDeletionFailure);
+            }
+           catch(Exception)
            {
-                Console.WriteLine(e.Message);
-                return false;
+                throw;
            }
         }
 
@@ -102,14 +108,18 @@ namespace Employee_Directory.Repository
         {
            try
             {
-                var sp = Constants.StoredProcedures.GetEmployees;
-                using var connection = GetSqlConnection();
+                string sp = Constants.StoredProcedures.GetEmployees;
+                using SqlConnection connection = GetSqlConnection();
                 IEnumerable<Employee> employees = await connection.QueryAsync<Employee>(sp, commandType: System.Data.CommandType.StoredProcedure);
                 return employees.ToList();
             }
+            catch(ArgumentException)
+            {
+                throw new Exception(Constants.Errors.UnableToConnectToDB);
+            }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                throw new Exception(ex.Message);
             }
             return [];
         }
@@ -124,14 +134,17 @@ namespace Employee_Directory.Repository
         {
             try
             {
-                using var connection = GetSqlConnection();
-                var jobTitlesCount = await connection.QueryAsync<SectionAndCount>(Constants.Query.GetJobTitleandCount);
+                using SqlConnection connection = GetSqlConnection();
+                IEnumerable<SectionAndCount> jobTitlesCount = await connection.QueryAsync<SectionAndCount>(Constants.Query.GetJobTitleandCount);
                 return jobTitlesCount.ToList();
             }
-            catch(Exception ex)
+            catch(ArgumentException)
             {
-                Console.WriteLine(ex.Message);
-                return null;
+                throw new Exception(Constants.Errors.UnableToConnectToDB);
+            }
+            catch(Exception)
+            {
+                throw new Exception(Constants.Errors.UnabletToFetchJobTitles);
             }
         }
     }

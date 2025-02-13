@@ -19,25 +19,38 @@ namespace Employee_Directory.Controllers
         }
 
         [HttpGet("{name}")]
-        public async Task<ActionResult<Office>> Get(string name)
+        public async Task<ActionResult<ApiResponse<Office>>> Get(string name)
         {
-           var office = await OfficeServices.GetOffice(name);
-           if(office != null)
-           {
-                return Ok(office);
-           }
-            return BadRequest();
+           ApiResponse<Office> response = new ApiResponse<Office>();
+            try
+            {
+                Office office = await OfficeServices.GetOffice(name);
+                response.Data = office;
+                return response;
+            }
+            catch (Exception ex)
+            {
+                response.ErrorMessage = ex.Message;
+                response.Success = false;
+            }
+            return response;
 
         }
         [HttpGet("get-offices")]
-        public async Task<ActionResult<List<SectionAndCount>>> GetOfficesCount()
+        public async Task<ActionResult<ApiResponse<List<SectionAndCount>>>> GetOfficesCount()
         {
-           var offices =  await OfficeServices.GetOfficesAndCount();
-            if(offices is null)
+            ApiResponse<List<SectionAndCount>> response = new ApiResponse<List<SectionAndCount>>();
+            try
             {
-                return BadRequest();
+                List<SectionAndCount> officeCount = await OfficeServices.GetOfficesAndCount();
+                response.Data = officeCount;
             }
-            return Ok(offices);
+            catch (Exception ex)
+            {
+                response.ErrorMessage = ex.Message;
+                response.Success = false;
+            }
+            return response;
         }
     }
 }

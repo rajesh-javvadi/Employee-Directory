@@ -24,30 +24,43 @@ namespace Employee_Directory.Repository
         {
             try
             {
-                using var connection = GetSqlConnection();
-                return 
+
+                using SqlConnection connection = GetSqlConnection();
+                Department department =
                     await connection.QuerySingleAsync<Department>
                     (Constants.Query.GetDepartmentId, new { department = departmentName });
+                return department;
             }
-            catch (Exception ex)
+            catch(ArgumentException)
             {
-                Console.WriteLine(ex.Message);
+                throw new Exception(Constants.Errors.UnableToConnectToDB);
             }
-            return null;
+            catch (InvalidOperationException)
+            {
+                throw new Exception(Constants.Errors.UnableToFetchDepartmentID);
+            }
+            catch (Exception)
+            {
+                throw new Exception(Constants.Errors.ErrorFetchingDepratmentID);
+            }
         }
 
         internal async Task<List<SectionAndCount>> GetDepartmentandCount()
         {
             try
             {
-                using var connection = GetSqlConnection();
-                var departmentsCount = await connection.QueryAsync<SectionAndCount>(Constants.Query.GetDepartmentsandCount);
+                using SqlConnection  connection = GetSqlConnection();
+                IEnumerable<SectionAndCount> departmentsCount = await connection.QueryAsync<SectionAndCount>(Constants.Query.GetDepartmentsandCount);
                 return departmentsCount.ToList();
+            }
+            catch(ArgumentException)
+            {
+                throw new Exception(Constants.Errors.UnableToConnectToDB);
             }
             catch(Exception ex)
             {
-                Console.WriteLine(ex.Message);
-                return null;
+
+                throw new Exception(Constants.Errors.UnableToFetchDepartment);
             }
         }
     }

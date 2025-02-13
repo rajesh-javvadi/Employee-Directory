@@ -1,4 +1,7 @@
-﻿using Employee_Directory.Models;
+﻿using System.Collections.Generic;
+using System.Reflection.Metadata;
+using Employee_Directory.Concerns;
+using Employee_Directory.Models;
 using Employee_Directory.Services;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
@@ -17,57 +20,88 @@ namespace Employee_Directory.Controllers
             _employeeServices = employeeServices;
         }
         [HttpPost("employee")]
-        public async Task<ActionResult> AddEmployee(Employee employee)
+        public async Task<ActionResult<ApiResponse<string>>> AddEmployee(Employee employee)
         {
-            bool status = await _employeeServices.AddEmployee(employee);
-            if(status)
+            ApiResponse<string> response = new ApiResponse<string>();
+            try
             {
-                return Created(); 
+                await _employeeServices.AddEmployee(employee);
+                response.Data = Constants.EmployeeAddedSuccess;
             }
-            return BadRequest();
-            
+            catch(Exception e)
+            {
+                response.ErrorMessage = e.Message;
+                response.Success = false;
+            }
+            return response;
         }
 
         [HttpGet()]
-        public async Task<ActionResult<List<Employee>>> GetAll()
+        public async Task<ActionResult<ApiResponse<List<Employee>>>> GetAll()
         {
-            var employees =  await _employeeServices.GetAllEmployees();
-            if(employees is not null)
+            ApiResponse<List<Employee>> response = new ApiResponse<List<Employee>>();
+            try
             {
-                return Ok(employees);
+                List<Employee> employees = await _employeeServices.GetAllEmployees();
+                response.Data = employees;
             }
-            return BadRequest();
+            catch(Exception e)
+            {
+                response.Success = false;
+                response.ErrorMessage = e.Message;
+            }
+            return response;
         }
         [HttpPut("employee")]
-        public async Task<ActionResult> UpdateEmployee(Employee employee)
+        public async Task<ActionResult<ApiResponse<string>>> UpdateEmployee(Employee employee)
         {
-            bool status =  await _employeeServices.UpdateEmployee(employee); 
-            if(status)
+            ApiResponse<string> response = new ApiResponse<string>();
+            try
             {
-                return NoContent();
+                await _employeeServices.UpdateEmployee(employee);
+                response.Data = Constants.EmployeeUpdateSuccess;
+                return response;
             }
-            return BadRequest();
+            catch(Exception e)
+            {
+                response.Success = false;
+                response.ErrorMessage = e.Message;
+            }
+            return response;
         }
 
         [HttpDelete("employee/{id}")]
-        public async Task<ActionResult> DeleteEmployee(string id)
+        public async Task<ActionResult<ApiResponse<string>>> DeleteEmployee(string id)
         {
-            bool status =  await _employeeServices.DeleteEmployee(id);
-            if(status)
+            ApiResponse<string> response = new ApiResponse<string>();
+            try
             {
-                return NoContent();
+                await _employeeServices.DeleteEmployee(id);
+                response.Data = Constants.EmployeeDeleteSuccess;
+                return response;
             }
-            return BadRequest();
+            catch(Exception e)
+            {
+                response.Success = false;
+                response.ErrorMessage = e.Message;
+            }
+            return response;
         }
         [HttpGet("jobTitles-count")]
-        public async Task<ActionResult<List<SectionAndCount>>> GetJobTitlesCount()
+        public async Task<ActionResult<ApiResponse<List<SectionAndCount>>>> GetJobTitlesCount()
         {
-            List<SectionAndCount> jobTitleCount = await _employeeServices.GetJobTitlesCount();
-            if(jobTitleCount is null)
+            ApiResponse<List<SectionAndCount>> response = new ApiResponse<List<SectionAndCount>>();
+            try
             {
-                return BadRequest();
+                List<SectionAndCount> jobTitleCount = await _employeeServices.GetJobTitlesCount();
+                response.Data = jobTitleCount;
             }
-            return Ok(jobTitleCount);
+            catch(Exception e)
+            {
+                response.ErrorMessage = e.Message;
+                response.Success = false;
+            }
+            return response;
         }
     }
 }

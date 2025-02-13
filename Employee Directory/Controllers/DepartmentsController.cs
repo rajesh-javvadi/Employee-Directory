@@ -19,20 +19,39 @@ namespace Employee_Directory.Controllers
         }
 
         [HttpGet("{name}")]
-        public async Task<ActionResult<Department>> GetDepartment(string name)
+        public async Task<ApiResponse<Department>> GetDepartment(string name)
         {
-            return await _services.GetDepartment(name);
+            ApiResponse<Department> response = new ApiResponse<Department>();
+            try
+            {
+                response.Data = await _services.GetDepartment(name);
+                return response;
+            }
+            catch (Exception ex)
+            {
+                response.ErrorMessage = ex.Message;
+                response.Success = false;
+            }
+            return response;
         }
 
         [HttpGet("get-departments")]
-        public async Task<ActionResult<List<SectionAndCount>>> GetDepartmentandCount()
+        public async Task<ActionResult<ApiResponse<List<SectionAndCount>>>> GetDepartmentandCount()
         {
-            var departments = await _services.GetDepartmentsandCount();
-            if(departments is null)
+            ApiResponse<List<SectionAndCount>> response = new ApiResponse<List<SectionAndCount>>();
+            try
             {
-                return BadRequest();
+                List<SectionAndCount> departments = await _services.GetDepartmentsandCount();
+                response.Data = departments;
+                return response;
             }
-            return Ok(departments);
+            catch(Exception ex)
+            {
+                response.ErrorMessage = ex.Message;
+                response.Success = false;
+                return BadRequest(response);
+            }
+            
         }
     }
 }
