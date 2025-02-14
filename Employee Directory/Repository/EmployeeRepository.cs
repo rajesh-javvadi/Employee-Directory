@@ -25,21 +25,21 @@ namespace Employee_Directory.Repository
             {
                 string sp = Constants.StoredProcedures.InsertIntoEmployees;
                 using SqlConnection connection = GetSqlConnection();
-                Department department = await _departmentServices.GetDepartment(employee.department);
-                Office office = await _officeServices.GetOffice(employee.office);
+                Department department = await _departmentServices.GetDepartment(employee.Department);
+                Office office = await _officeServices.GetOffice(employee.Office);
                 var count =
                     await connection.ExecuteAsync(sp, new
                     {
                         Id = employee.Id,
-                        firstName = employee.firstName,
-                        lastName = employee.lastName,
-                        email = employee.email,
-                        phoneNumber = employee.phoneNumber,
+                        firstName = employee.FirstName,
+                        lastName = employee.LastName,
+                        email = employee.Email,
+                        phoneNumber = employee.PhoneNumber,
                         office = office.Id,
                         department = department.Id,
-                        skypeId = employee.skypeId,
-                        preferredName = employee.preferredName,
-                        jobTitle = employee.jobTitle,
+                        skypeId = employee.SkypeId,
+                        preferredName = employee.PreferredName,
+                        jobTitle = employee.JobTitle,
 
                     }, commandType: System.Data.CommandType.StoredProcedure);
             }
@@ -59,21 +59,21 @@ namespace Employee_Directory.Repository
             {
                 string sp = Constants.StoredProcedures.UpdateEmployee;
                 using SqlConnection connection = GetSqlConnection();
-                Department department = await _departmentServices.GetDepartment(employee.department);
-                Office office = await _officeServices.GetOffice(employee.office);
+                Department department = await _departmentServices.GetDepartment(employee.Department);
+                Office office = await _officeServices.GetOffice(employee.Office);
                 var count =
                     await connection.ExecuteAsync(sp, new
                     {
                         Id = employee.Id,
-                        firstName = employee.firstName,
-                        lastName = employee.lastName,
-                        email = employee.email,
-                        phoneNumber = employee.phoneNumber,
+                        firstName = employee.FirstName,
+                        lastName = employee.LastName,
+                        email = employee.Email,
+                        phoneNumber = employee.PhoneNumber,
                         office = office.Id,
                         department = department.Id,
-                        skypeId = employee.skypeId,
-                        preferredName = employee.preferredName,
-                        jobTitle = employee.jobTitle,
+                        skypeId = employee.SkypeId,
+                        preferredName = employee.PreferredName,
+                        jobTitle = employee.JobTitle,
 
                     }, commandType: System.Data.CommandType.StoredProcedure);
             }
@@ -92,7 +92,7 @@ namespace Employee_Directory.Repository
            try
            {
                 using SqlConnection connection = GetSqlConnection();
-                int count = await connection.ExecuteAsync(Constants.Query.DeleteEmployee, new { id = id });
+                int count = await connection.ExecuteAsync(Constants.StoredProcedures.DeleteEmployee, new { id = id },commandType:System.Data.CommandType.StoredProcedure);
            }
             catch(ArgumentException)
             {
@@ -121,7 +121,6 @@ namespace Employee_Directory.Repository
             {
                 throw new Exception(ex.Message);
             }
-            return [];
         }
 
         private SqlConnection GetSqlConnection()

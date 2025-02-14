@@ -1,13 +1,11 @@
 ﻿using Employee_Directory.Models;
 using Employee_Directory.Services;
-using Microsoft.AspNetCore.Cors;
-using Microsoft.AspNetCore.Http;
+
 using Microsoft.AspNetCore.Mvc;
 
 namespace Employee_Directory.Controllers
 {
     [Route("api/[controller]")]
-    [EnableCors]
     [ApiController]
     public class DepartmentsController : ControllerBase
     {

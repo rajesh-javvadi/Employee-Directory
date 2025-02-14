@@ -11,7 +11,6 @@ namespace Employee_Directory.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [EnableCors]
     public class EmployeesController : ControllerBase
     {
         private readonly EmployeeServices _employeeServices;

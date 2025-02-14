@@ -2,16 +2,16 @@
 {
     public class Employee
     {
-        public string Id { get; set; }
-        public string firstName { get; set; }
-        public string lastName { get; set; }
-        public string email { get; set; }
-        public string preferredName { get; set; }
-        public string jobTitle { get; set; }
-        public string office { get; set; }
-        public string department { get; set; }
-        public string phoneNumber { get; set; }
-        public string skypeId { get; set; }
+        public string? Id { get; set; }
+        public string? FirstName { get; set; }
+        public string? LastName { get; set; }
+        public string? Email { get; set; }
+        public string? PreferredName { get; set; }
+        public string? JobTitle { get; set; }
+        public string? Office { get; set; }
+        public string? Department { get; set; }
+        public string? PhoneNumber { get; set; }
+        public string? SkypeId { get; set; }
 
     }
 }
