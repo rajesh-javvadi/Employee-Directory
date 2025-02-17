@@ -18,7 +18,7 @@ namespace Employee_Directory.Controllers
         {
             _employeeServices = employeeServices;
         }
-        [HttpPost("employee")]
+        [HttpPost(Constants.Routes.employee)]
         public async Task<ActionResult<ApiResponse<string>>> AddEmployee(Employee employee)
         {
             ApiResponse<string> response = new ApiResponse<string>();
@@ -51,7 +51,7 @@ namespace Employee_Directory.Controllers
             }
             return response;
         }
-        [HttpPut("employee")]
+        [HttpPut(Constants.Routes.employee)]
         public async Task<ActionResult<ApiResponse<string>>> UpdateEmployee(Employee employee)
         {
             ApiResponse<string> response = new ApiResponse<string>();
@@ -86,7 +86,7 @@ namespace Employee_Directory.Controllers
             }
             return response;
         }
-        [HttpGet("jobTitles-count")]
+        [HttpGet(Constants.Routes.jobTitlesCount)]
         public async Task<ActionResult<ApiResponse<List<SectionAndCount>>>> GetJobTitlesCount()
         {
             ApiResponse<List<SectionAndCount>> response = new ApiResponse<List<SectionAndCount>>();

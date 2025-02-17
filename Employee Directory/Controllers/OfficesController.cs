@@ -1,4 +1,5 @@
-﻿using Employee_Directory.Models;
+﻿using Employee_Directory.Concerns;
+using Employee_Directory.Models;
 using Employee_Directory.Services;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
@@ -33,7 +34,7 @@ namespace Employee_Directory.Controllers
             return response;
 
         }
-        [HttpGet("get-offices")]
+        [HttpGet(Constants.Routes.OfficeCount)]
         public async Task<ActionResult<ApiResponse<List<SectionAndCount>>>> GetOfficesCount()
         {
             ApiResponse<List<SectionAndCount>> response = new ApiResponse<List<SectionAndCount>>();

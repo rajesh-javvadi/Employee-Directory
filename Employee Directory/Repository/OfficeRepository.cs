@@ -1,30 +1,30 @@
 ﻿using Dapper;
 using Employee_Directory.Concerns;
 using Employee_Directory.Models;
+using Employee_Directory.Services;
 using Microsoft.Data.SqlClient;
 
 namespace Employee_Directory.Repository
 {
     public class OfficeRepository
     {
-        private IConfiguration _configuration;
 
-        public OfficeRepository(IConfiguration configuration)
+        private DBServices _dBServices;
+
+        public OfficeRepository(DBServices dBServices)
         {
-            _configuration = configuration;
+            _dBServices = dBServices;
         }
 
         public async Task<Office> GetOffice(string officeName)
         {
             try
             {
-                using SqlConnection connection = GetSqlConnection();
-                var office = 
-                    await connection.QuerySingleAsync<Office>(Constants.Query.GetOfficeId, new {office = officeName});
+                Office office = await _dBServices.GetSingleDataTAsync<Office, Object>(Constants.Query.GetOfficeId, new { office = officeName });
                 return office;
 
             }
-            catch(Exception ex)
+            catch(Exception)
             {
                 throw;
             }
@@ -34,9 +34,8 @@ namespace Employee_Directory.Repository
         {
             try
             {
-                using SqlConnection connection = GetSqlConnection();
-                var offices = await connection.QueryAsync<SectionAndCount>(Constants.Query.GetOfficesandCount);
-                return offices.ToList();
+                List<SectionAndCount> sectionAndCounts = await _dBServices.GetDataTAsync<SectionAndCount>(Constants.Query.GetOfficesandCount,false);
+                return sectionAndCounts;
             }
             catch(ArgumentException)
             {
@@ -46,12 +45,6 @@ namespace Employee_Directory.Repository
             {
                 throw new Exception(Constants.Errors.UnableToFetchOffices);
             }
-        }
-
-        private SqlConnection GetSqlConnection()
-        {
-            return
-                new SqlConnection(_configuration.GetConnectionString(Constants.ConnectionStrings.ConnectionString));
         }
     }
 }

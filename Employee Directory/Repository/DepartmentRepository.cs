@@ -1,33 +1,31 @@
 ﻿using Dapper;
 using Employee_Directory.Concerns;
 using Employee_Directory.Models;
+using Employee_Directory.Services;
 using Microsoft.Data.SqlClient;
 
 namespace Employee_Directory.Repository
 {
     public class DepartmentRepository
     {
-        private IConfiguration _configuration;
 
-        public DepartmentRepository(IConfiguration configuration)
-        {
-            _configuration = configuration;
-        }
+        private DBServices _dbServices;
 
-        private SqlConnection GetSqlConnection()
+        public DepartmentRepository(DBServices dBServices)
         {
-            return
-                new SqlConnection(_configuration.GetConnectionString(Constants.ConnectionStrings.ConnectionString));
+            _dbServices = dBServices;
         }
 
         public async Task<Department> GetDepartment(string departmentName)
         {
             try
             {
-
-                using SqlConnection connection = GetSqlConnection();
+                var obj = new
+                {
+                    department = departmentName,
+                };
                 Department department =
-                    await connection.QuerySingleAsync<Department>
+                    await _dbServices.GetSingleDataTAsync<Department,Object>
                     (Constants.Query.GetDepartmentId, new { department = departmentName });
                 return department;
             }
@@ -49,9 +47,8 @@ namespace Employee_Directory.Repository
         {
             try
             {
-                using SqlConnection  connection = GetSqlConnection();
-                IEnumerable<SectionAndCount> departmentsCount = await connection.QueryAsync<SectionAndCount>(Constants.Query.GetDepartmentsandCount);
-                return departmentsCount.ToList();
+                List<SectionAndCount> sectionAndCounts = await _dbServices.GetDataTAsync<SectionAndCount>(Constants.Query.GetDepartmentsandCount,false);
+                return sectionAndCounts;
             }
             catch(ArgumentException)
             {

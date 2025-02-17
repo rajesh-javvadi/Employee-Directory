@@ -15,8 +15,6 @@ builder.Services.AddCors(options =>
         });
 });
 
-
-
 builder.Services.AddControllers();
 
 builder.Services.AddOpenApi();
@@ -27,6 +25,7 @@ builder.Services.AddScoped<OfficeServices>();
 builder.Services.AddScoped<OfficeRepository>();
 builder.Services.AddScoped<DepartmentRepository>();
 builder.Services.AddScoped<DepartmentServices>();
+builder.Services.AddScoped<DBServices>();
 
 var app = builder.Build();
 

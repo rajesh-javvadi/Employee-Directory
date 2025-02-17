@@ -36,6 +36,14 @@
             public const string EmployeeDeletionFailure = "Unable to Delete Employee";
         }
 
+        public static class Routes
+        {
+            public const string employee = "employee";
+            public const string GetDepartments = "get-departments";
+            public const string jobTitlesCount = "jobTitles-count";
+            public const string OfficeCount = "get-offices";
+        }
+
         public static string EmployeeAddedSuccess = "Employee added to the db successfully";
         public static string EmployeeUpdateSuccess = "Employee updating Succeed";
         public static string EmployeeDeleteSuccess = "Employee deletion Succeed";
