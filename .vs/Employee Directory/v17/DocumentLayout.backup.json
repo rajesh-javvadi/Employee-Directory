@@ -1,0 +1,541 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|c:\\users\\rajesh.j\\onedrive - praval\\tasks\\typescript\\employeedirectory\\javascript-employee-directory-rajesh-javvadi\\employee directory\\employee directory\\services\\pdfservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|solutionrelative:employee directory\\services\\pdfservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|c:\\users\\rajesh.j\\onedrive - praval\\tasks\\typescript\\employeedirectory\\javascript-employee-directory-rajesh-javvadi\\employee directory\\employee directory\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|solutionrelative:employee directory\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|c:\\users\\rajesh.j\\onedrive - praval\\tasks\\typescript\\employeedirectory\\javascript-employee-directory-rajesh-javvadi\\employee directory\\employee directory\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|solutionrelative:employee directory\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|c:\\users\\rajesh.j\\onedrive - praval\\tasks\\typescript\\employeedirectory\\javascript-employee-directory-rajesh-javvadi\\employee directory\\employee directory\\services\\employeeservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|solutionrelative:employee directory\\services\\employeeservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|c:\\users\\rajesh.j\\onedrive - praval\\tasks\\typescript\\employeedirectory\\javascript-employee-directory-rajesh-javvadi\\employee directory\\employee directory\\concerns\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|solutionrelative:employee directory\\concerns\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|c:\\users\\rajesh.j\\onedrive - praval\\tasks\\typescript\\employeedirectory\\javascript-employee-directory-rajesh-javvadi\\employee directory\\employee directory\\employee directory.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|solutionrelative:employee directory\\employee directory.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|c:\\users\\rajesh.j\\onedrive - praval\\tasks\\typescript\\employeedirectory\\javascript-employee-directory-rajesh-javvadi\\employee directory\\employee directory\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|solutionrelative:employee directory\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|c:\\users\\rajesh.j\\onedrive - praval\\tasks\\typescript\\employeedirectory\\javascript-employee-directory-rajesh-javvadi\\employee directory\\employee directory\\employee directory.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|solutionrelative:employee directory\\employee directory.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|c:\\users\\rajesh.j\\onedrive - praval\\tasks\\typescript\\employeedirectory\\javascript-employee-directory-rajesh-javvadi\\employee directory\\employee directory\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|solutionrelative:employee directory\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|c:\\users\\rajesh.j\\onedrive - praval\\tasks\\typescript\\employeedirectory\\javascript-employee-directory-rajesh-javvadi\\employee directory\\employee directory\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|solutionrelative:employee directory\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|c:\\users\\rajesh.j\\onedrive - praval\\tasks\\typescript\\employeedirectory\\javascript-employee-directory-rajesh-javvadi\\employee directory\\employee directory\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|solutionrelative:employee directory\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|c:\\users\\rajesh.j\\onedrive - praval\\tasks\\typescript\\employeedirectory\\javascript-employee-directory-rajesh-javvadi\\employee directory\\employee directory\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|solutionrelative:employee directory\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|c:\\users\\rajesh.j\\onedrive - praval\\tasks\\typescript\\employeedirectory\\javascript-employee-directory-rajesh-javvadi\\employee directory\\employee directory\\repository\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|solutionrelative:employee directory\\repository\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|c:\\users\\rajesh.j\\onedrive - praval\\tasks\\typescript\\employeedirectory\\javascript-employee-directory-rajesh-javvadi\\employee directory\\employee directory\\repository\\departmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|solutionrelative:employee directory\\repository\\departmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|c:\\users\\rajesh.j\\onedrive - praval\\tasks\\typescript\\employeedirectory\\javascript-employee-directory-rajesh-javvadi\\employee directory\\employee directory\\services\\userservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|solutionrelative:employee directory\\services\\userservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|c:\\users\\rajesh.j\\onedrive - praval\\tasks\\typescript\\employeedirectory\\javascript-employee-directory-rajesh-javvadi\\employee directory\\employee directory\\services\\officeservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|solutionrelative:employee directory\\services\\officeservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|c:\\users\\rajesh.j\\onedrive - praval\\tasks\\typescript\\employeedirectory\\javascript-employee-directory-rajesh-javvadi\\employee directory\\employee directory\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|solutionrelative:employee directory\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|c:\\users\\rajesh.j\\onedrive - praval\\tasks\\typescript\\employeedirectory\\javascript-employee-directory-rajesh-javvadi\\employee directory\\employee directory\\services\\dbservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|solutionrelative:employee directory\\services\\dbservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|c:\\users\\rajesh.j\\onedrive - praval\\tasks\\typescript\\employeedirectory\\javascript-employee-directory-rajesh-javvadi\\employee directory\\employee directory\\exceptions\\credentialsexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|solutionrelative:employee directory\\exceptions\\credentialsexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|c:\\users\\rajesh.j\\onedrive - praval\\tasks\\typescript\\employeedirectory\\javascript-employee-directory-rajesh-javvadi\\employee directory\\employee directory\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|solutionrelative:employee directory\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|c:\\users\\rajesh.j\\onedrive - praval\\tasks\\typescript\\employeedirectory\\javascript-employee-directory-rajesh-javvadi\\employee directory\\employee directory\\models\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|solutionrelative:employee directory\\models\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|c:\\users\\rajesh.j\\onedrive - praval\\tasks\\typescript\\employeedirectory\\javascript-employee-directory-rajesh-javvadi\\employee directory\\employee directory\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|solutionrelative:employee directory\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|c:\\users\\rajesh.j\\onedrive - praval\\tasks\\typescript\\employeedirectory\\javascript-employee-directory-rajesh-javvadi\\employee directory\\employee directory\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|solutionrelative:employee directory\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|c:\\users\\rajesh.j\\onedrive - praval\\tasks\\typescript\\employeedirectory\\javascript-employee-directory-rajesh-javvadi\\employee directory\\employee directory\\repository\\officerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|solutionrelative:employee directory\\repository\\officerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|c:\\users\\rajesh.j\\onedrive - praval\\tasks\\typescript\\employeedirectory\\javascript-employee-directory-rajesh-javvadi\\employee directory\\employee directory\\controllers\\officescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|solutionrelative:employee directory\\controllers\\officescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|c:\\users\\rajesh.j\\onedrive - praval\\tasks\\typescript\\employeedirectory\\javascript-employee-directory-rajesh-javvadi\\employee directory\\employee directory\\controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|solutionrelative:employee directory\\controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|c:\\users\\rajesh.j\\onedrive - praval\\tasks\\typescript\\employeedirectory\\javascript-employee-directory-rajesh-javvadi\\employee directory\\employee directory\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|solutionrelative:employee directory\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|c:\\users\\rajesh.j\\onedrive - praval\\tasks\\typescript\\employeedirectory\\javascript-employee-directory-rajesh-javvadi\\employee directory\\employee directory\\services\\departmentservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|solutionrelative:employee directory\\services\\departmentservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|c:\\users\\rajesh.j\\onedrive - praval\\tasks\\typescript\\employeedirectory\\javascript-employee-directory-rajesh-javvadi\\employee directory\\employee directory\\models\\office.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|solutionrelative:employee directory\\models\\office.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|c:\\users\\rajesh.j\\onedrive - praval\\tasks\\typescript\\employeedirectory\\javascript-employee-directory-rajesh-javvadi\\employee directory\\employee directory\\models\\sectionandcount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|solutionrelative:employee directory\\models\\sectionandcount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|c:\\users\\rajesh.j\\onedrive - praval\\tasks\\typescript\\employeedirectory\\javascript-employee-directory-rajesh-javvadi\\employee directory\\employee directory\\employee directory.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{34EE1F3D-2AFE-44B6-8205-1D3D7BD068D7}|Employee Directory\\Employee Directory.csproj|solutionrelative:employee directory\\employee directory.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EmployeesController.cs",
+              "DocumentMoniker": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\Controllers\\EmployeesController.cs",
+              "RelativeDocumentMoniker": "Employee Directory\\Controllers\\EmployeesController.cs",
+              "ToolTip": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\Controllers\\EmployeesController.cs*",
+              "RelativeToolTip": "Employee Directory\\Controllers\\EmployeesController.cs*",
+              "ViewState": "AgIAAHMAAAAAAAAAAAAhwIYAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T12:28:57.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "Employee Directory\\Models\\Employee.cs",
+              "ToolTip": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\Models\\Employee.cs",
+              "RelativeToolTip": "Employee Directory\\Models\\Employee.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T09:21:20.32Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EmployeeServices.cs",
+              "DocumentMoniker": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\Services\\EmployeeServices.cs",
+              "RelativeDocumentMoniker": "Employee Directory\\Services\\EmployeeServices.cs",
+              "ToolTip": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\Services\\EmployeeServices.cs",
+              "RelativeToolTip": "Employee Directory\\Services\\EmployeeServices.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAcwGAAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T12:59:49.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PdfServices.cs",
+              "DocumentMoniker": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\Services\\PdfServices.cs",
+              "RelativeDocumentMoniker": "Employee Directory\\Services\\PdfServices.cs",
+              "ToolTip": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\Services\\PdfServices.cs",
+              "RelativeToolTip": "Employee Directory\\Services\\PdfServices.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAQwCAAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T13:37:57.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\Program.cs",
+              "RelativeDocumentMoniker": "Employee Directory\\Program.cs",
+              "ToolTip": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\Program.cs",
+              "RelativeToolTip": "Employee Directory\\Program.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACQAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T04:33:46.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Employee Directory.csproj",
+              "DocumentMoniker": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\Employee Directory.csproj",
+              "RelativeDocumentMoniker": "Employee Directory\\Employee Directory.csproj",
+              "ToolTip": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\Employee Directory.csproj",
+              "RelativeToolTip": "Employee Directory\\Employee Directory.csproj",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAuwBUAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-10T08:55:54.453Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Employee Directory\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Employee Directory\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-19T17:32:59.562Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Employee Directory",
+              "DocumentMoniker": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\Employee Directory.csproj",
+              "RelativeDocumentMoniker": "Employee Directory\\Employee Directory.csproj",
+              "ToolTip": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\Employee Directory.csproj",
+              "RelativeToolTip": "Employee Directory\\Employee Directory.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-10T10:22:04.188Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Department.cs",
+              "DocumentMoniker": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\Models\\Department.cs",
+              "RelativeDocumentMoniker": "Employee Directory\\Models\\Department.cs",
+              "ToolTip": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\Models\\Department.cs",
+              "RelativeToolTip": "Employee Directory\\Models\\Department.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T11:42:43.179Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Employee Directory\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Employee Directory\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T06:39:14.344Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "LoginDTO.cs",
+              "DocumentMoniker": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\DTO\\LoginDTO.cs",
+              "RelativeDocumentMoniker": "Employee Directory\\DTO\\LoginDTO.cs",
+              "ToolTip": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\DTO\\LoginDTO.cs",
+              "RelativeToolTip": "Employee Directory\\DTO\\LoginDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T06:49:36.95Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "EmployeeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\Repository\\EmployeeRepository.cs",
+              "RelativeDocumentMoniker": "Employee Directory\\Repository\\EmployeeRepository.cs",
+              "ToolTip": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\Repository\\EmployeeRepository.cs",
+              "RelativeToolTip": "Employee Directory\\Repository\\EmployeeRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKMAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T08:57:23.993Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "DepartmentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\Repository\\DepartmentRepository.cs",
+              "RelativeDocumentMoniker": "Employee Directory\\Repository\\DepartmentRepository.cs",
+              "ToolTip": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\Repository\\DepartmentRepository.cs",
+              "RelativeToolTip": "Employee Directory\\Repository\\DepartmentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T11:27:36.893Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\appsettings.json",
+              "RelativeDocumentMoniker": "Employee Directory\\appsettings.json",
+              "ToolTip": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\appsettings.json",
+              "RelativeToolTip": "Employee Directory\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-10T08:41:27.536Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UserServices.cs",
+              "DocumentMoniker": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\Services\\UserServices.cs",
+              "RelativeDocumentMoniker": "Employee Directory\\Services\\UserServices.cs",
+              "ToolTip": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\Services\\UserServices.cs",
+              "RelativeToolTip": "Employee Directory\\Services\\UserServices.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAhwCkAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T11:53:06.302Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "OfficeServices.cs",
+              "DocumentMoniker": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\Services\\OfficeServices.cs",
+              "RelativeDocumentMoniker": "Employee Directory\\Services\\OfficeServices.cs",
+              "ToolTip": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\Services\\OfficeServices.cs",
+              "RelativeToolTip": "Employee Directory\\Services\\OfficeServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T10:28:42.511Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ApiResponse.cs",
+              "DocumentMoniker": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\Models\\ApiResponse.cs",
+              "RelativeDocumentMoniker": "Employee Directory\\Models\\ApiResponse.cs",
+              "ToolTip": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\Models\\ApiResponse.cs",
+              "RelativeToolTip": "Employee Directory\\Models\\ApiResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T12:49:50.677Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\Repository\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Employee Directory\\Repository\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\Repository\\UserRepository.cs",
+              "RelativeToolTip": "Employee Directory\\Repository\\UserRepository.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAhwDcAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T07:00:40.907Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "DBServices.cs",
+              "DocumentMoniker": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\Services\\DBServices.cs",
+              "RelativeDocumentMoniker": "Employee Directory\\Services\\DBServices.cs",
+              "ToolTip": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\Services\\DBServices.cs",
+              "RelativeToolTip": "Employee Directory\\Services\\DBServices.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAhwDgAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T07:02:56.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CredentialsException.cs",
+              "DocumentMoniker": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\Exceptions\\CredentialsException.cs",
+              "RelativeDocumentMoniker": "Employee Directory\\Exceptions\\CredentialsException.cs",
+              "ToolTip": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\Exceptions\\CredentialsException.cs",
+              "RelativeToolTip": "Employee Directory\\Exceptions\\CredentialsException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T12:02:35.813Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Employee Directory\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\Models\\User.cs",
+              "RelativeToolTip": "Employee Directory\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T07:02:42.007Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "UserDTO.cs",
+              "DocumentMoniker": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\DTO\\UserDTO.cs",
+              "RelativeDocumentMoniker": "Employee Directory\\DTO\\UserDTO.cs",
+              "ToolTip": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\DTO\\UserDTO.cs",
+              "RelativeToolTip": "Employee Directory\\DTO\\UserDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T06:47:40.101Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "OfficeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\Repository\\OfficeRepository.cs",
+              "RelativeDocumentMoniker": "Employee Directory\\Repository\\OfficeRepository.cs",
+              "ToolTip": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\Repository\\OfficeRepository.cs",
+              "RelativeToolTip": "Employee Directory\\Repository\\OfficeRepository.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAYwBYAAABlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T10:32:16.307Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "DepartmentsController.cs",
+              "DocumentMoniker": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\Controllers\\DepartmentsController.cs",
+              "RelativeDocumentMoniker": "Employee Directory\\Controllers\\DepartmentsController.cs",
+              "ToolTip": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\Controllers\\DepartmentsController.cs",
+              "RelativeToolTip": "Employee Directory\\Controllers\\DepartmentsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T13:13:36.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "OfficesController.cs",
+              "DocumentMoniker": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\Controllers\\OfficesController.cs",
+              "RelativeDocumentMoniker": "Employee Directory\\Controllers\\OfficesController.cs",
+              "ToolTip": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\Controllers\\OfficesController.cs",
+              "RelativeToolTip": "Employee Directory\\Controllers\\OfficesController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwDYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T11:10:44.208Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "Employee Directory\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\appsettings.Development.json",
+              "RelativeToolTip": "Employee Directory\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-14T13:28:55.93Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "DepartmentServices.cs",
+              "DocumentMoniker": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\Services\\DepartmentServices.cs",
+              "RelativeDocumentMoniker": "Employee Directory\\Services\\DepartmentServices.cs",
+              "ToolTip": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\Services\\DepartmentServices.cs",
+              "RelativeToolTip": "Employee Directory\\Services\\DepartmentServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T11:48:13.796Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Office.cs",
+              "DocumentMoniker": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\Models\\Office.cs",
+              "RelativeDocumentMoniker": "Employee Directory\\Models\\Office.cs",
+              "ToolTip": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\Models\\Office.cs",
+              "RelativeToolTip": "Employee Directory\\Models\\Office.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T10:13:16.142Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "SectionAndCount.cs",
+              "DocumentMoniker": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\Models\\SectionAndCount.cs",
+              "RelativeDocumentMoniker": "Employee Directory\\Models\\SectionAndCount.cs",
+              "ToolTip": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\Models\\SectionAndCount.cs",
+              "RelativeToolTip": "Employee Directory\\Models\\SectionAndCount.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T08:58:49.584Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Employee Directory.http",
+              "DocumentMoniker": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\Employee Directory.http",
+              "RelativeDocumentMoniker": "Employee Directory\\Employee Directory.http",
+              "ToolTip": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\Employee Directory.http",
+              "RelativeToolTip": "Employee Directory\\Employee Directory.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-02-10T10:22:10.982Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "42e1fc9a-7fcc-4c10-bd6c-f8c06fedae26",
+        "Display": 0,
+        "X": 277,
+        "Y": 149,
+        "Width": 937,
+        "Height": 637,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Constants.cs",
+              "DocumentMoniker": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\Concerns\\Constants.cs",
+              "RelativeDocumentMoniker": "Employee Directory\\Concerns\\Constants.cs",
+              "ToolTip": "C:\\Users\\rajesh.j\\OneDrive - Praval\\Tasks\\TypeScript\\EmployeeDirectory\\javascript-employee-directory-rajesh-javvadi\\Employee Directory\\Employee Directory\\Concerns\\Constants.cs",
+              "RelativeToolTip": "Employee Directory\\Concerns\\Constants.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAMwDQAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T12:54:44.897Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
